@@ -4,7 +4,10 @@ go 1.24.1
 
 toolchain go1.24.6
 
-require github.com/hay-kot/scaffold v0.10.3
+require (
+	github.com/hay-kot/scaffold v0.10.3
+	nmyk.io/cowsay v1.0.2
+)
 
 require (
 	dario.cat/mergo v1.0.2 // indirect

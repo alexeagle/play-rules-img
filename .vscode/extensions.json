@@ -1,6 +1,5 @@
 {
-    "recommended": [
+    "recommendations": [
       "BazelBuild.vscode-bazel",
-
     ],
 }
