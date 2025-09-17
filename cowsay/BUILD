@@ -8,13 +8,13 @@ image_layer(
     srcs = {
         "/app/bin/server": "//cowsay/cmd/hello",
     },
-    compress = "zstd",  # Use zstd compression (optional, uses global default otherwise)
+    compress = "zstd",
 )
 
 # Build a container image
 image_manifest(
     name = "app_image",
-    base = "@ubuntu", # Optional: build "from scratch" without base.
+    base = "@distroless_base",
     entrypoint = ["/app/bin/server"],
     layers = [
         ":app_layer",
