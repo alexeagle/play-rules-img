@@ -1,0 +1,7 @@
+// Add direnv to the dev environment
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "name": "Starter image",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y direnv && echo 'eval \"$(direnv hook bash)\"' >> ~/.bashrc"
+}
